@@ -11247,3 +11247,17 @@ a.text-dark:focus {
   margin-right: 8px;
   vertical-align: middle; 
 }
+
+
+#consultar_datos:hover{
+  text-decoration: none;
+}
+
+#consultar_datos .material-icons {
+  vertical-align: middle;
+  font-size: 1.6em; 
+  margin-right: 10px; 
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.2em;
+}
