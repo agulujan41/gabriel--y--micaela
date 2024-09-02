@@ -11139,7 +11139,7 @@ a.text-dark:focus {
   display: flex;
   justify-content: space-around !important;
   align-items: center;
-  padding: 20px;
+  padding: 2.3em;
   margin: 0 auto;
   gap:5em;
   flex-wrap: wrap;
