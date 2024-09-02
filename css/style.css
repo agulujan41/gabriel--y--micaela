@@ -11174,6 +11174,7 @@ a.text-dark:focus {
   text-transform: uppercase;
   font-size: medium;
   color: #0E2521;
+  margin-bottom: 1.5em;
 }
 .wedding-images {
   display: flex;
@@ -11234,4 +11235,12 @@ a.text-dark:focus {
   background-color: #0E2521; /* Color de la barra de desplazamiento */
   border-radius: 10px; /* Border-radius mínimo */
   border: 2px solid #ffffff; /* Añade un borde blanco alrededor del thumb */
+}
+
+#payment-item::before{
+  content: "•"; 
+  color: black; 
+  font-size: 20px;
+  margin-right: 8px;
+  vertical-align: middle; 
 }
