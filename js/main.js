@@ -141,11 +141,17 @@ document.getElementById('whatsapp-form').addEventListener('submit', function(e) 
 
 document.addEventListener('DOMContentLoaded', function() {
     var audio = document.getElementById('background-music');
+    audio.play().then(function() {
+        console.log('Audio se está reproduciendo con el sonido desactivado');
+    }).catch(function(error) {
+        console.log('Error al intentar reproducir el audio:', error);
+    });
 
-    document.addEventListener('click', function() {
+
+    document.body.addEventListener('click', function() {
+        audio.muted = false;
         audio.play().catch(function(error) {
-            console.log('No se pudo reproducir el audio:', error);
+            console.log('Error al intentar reproducir el audio:', error);
         });
-        document.removeEventListener('click', arguments.callee);
     });
 });

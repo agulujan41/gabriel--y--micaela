@@ -37,7 +37,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav ml-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Principal</a>
+                <a id="homeClick" href="#home" class="nav-item nav-link active">Principal</a>
                 <a href="#about" class="nav-item nav-link">Sobre nosotros</a>
                 <a href="#gallery" class="nav-item nav-link">Galeria</a>
             </div>
@@ -55,7 +55,7 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/carousel-1.jpg" style="object-fit: cover;">
+                    <img loading="lazy" class="position-absolute w-100 h-100" src="img/carousel-1.jpg" style="object-fit: cover;">
                     <div class="carousel-caption d-flex">
                         <div class="p-3 " style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Micaela & Gabriel</h1>
@@ -71,7 +71,7 @@
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/carousel-2.jpg" style="object-fit: cover;">
+                    <img loading="lazy" class="position-absolute w-100 h-100" src="img/carousel-2.jpg" style="object-fit: cover;">
                     <div class="carousel-caption d-flex w-100 h-100">
                         <div class="p-3" style="max-width: 1000px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Gabriel & Micaela</h1>
@@ -143,12 +143,12 @@
                     </div>
                 </div>
                 <div class="col-md-6 p-0" style="min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/about-1.jpg" style="object-fit: cover;">
+                    <img loading="lazy" class="position-absolute w-100 h-100" src="img/about-1.jpg" style="object-fit: cover;">
                 </div>
             </div>
             <div class="row m-0">
                 <div class="col-md-6 p-0" style="min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/about-2.jpg" style="object-fit: cover;">
+                    <img loading="lazy" class="position-absolute w-100 h-100" src="img/about-2.jpg" style="object-fit: cover;">
                 </div>
                 <div class="col-md-6 p-0 text-center text-md-left">
                     <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
@@ -164,69 +164,6 @@
     <!-- About End -->
 
 
-    <!-- Story Start -->
-    <!-- <div class="container-fluid py-5" id="story">
-        <div class="container pt-5 pb-3">
-            <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Story</h6>
-                <h1 class="font-secondary display-4">Our Love Story</h1>
-                <i class="far fa-heart text-dark"></i>
-            </div>
-            <div class="container timeline position-relative p-0">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-right">
-                        <img class="img-fluid mr-md-3" src="img/story-1.jpg" alt="">
-                    </div>
-                    <div class="col-md-6 text-center text-md-left">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
-                            <h4 class="mb-2">First Meet</h4>
-                            <p class="text-uppercase mb-2">01 Jan 2050</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-right">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
-                            <h4 class="mb-2">First Date</h4>
-                            <p class="text-uppercase mb-2">01 Jan 2050</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-center text-md-left">
-                        <img class="img-fluid ml-md-3" src="img/story-2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-right">
-                        <img class="img-fluid mr-md-3" src="img/story-3.jpg" alt="">
-                    </div>
-                    <div class="col-md-6 text-center text-md-left">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
-                            <h4 class="mb-2">Proposal</h4>
-                            <p class="text-uppercase mb-2">01 Jan 2050</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-right">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
-                            <h4 class="mb-2">Enagagement</h4>
-                            <p class="text-uppercase mb-2">01 Jan 2050</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-center text-md-left">
-                        <img class="img-fluid ml-md-3" src="img/story-4.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Story End -->
-
-
     <!-- Gallery Start -->
     <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
         <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
@@ -236,37 +173,37 @@
         </div>
         <div class="owl-carousel gallery-carousel">
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-1.jpg" alt="">
+                <img loading="lazy" class="img-fluid w-100" src="img/gallery-1.jpg" alt="">
                 <a href="img/gallery-1.jpg" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-2.jpg" alt="">
+                <img loading="lazy" class="img-fluid w-100" src="img/gallery-2.jpg" alt="">
                 <a href="img/gallery-2.jpg" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="">
+                <img loading="lazy" class="img-fluid w-100" src="img/gallery-3.jpg" alt="">
                 <a href="img/gallery-3.jpg" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-4.jpg" alt="">
+                <img loading="lazy" class="img-fluid w-100" src="img/gallery-4.jpg" alt="">
                 <a href="img/gallery-4.jpg" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-5.jpg" alt="">
+                <img loading="lazy" class="img-fluid w-100" src="img/gallery-5.jpg" alt="">
                 <a href="img/gallery-5.jpg" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-6.jpg" alt="">
+                <img loading="lazy" class="img-fluid w-100" src="img/gallery-6.jpg" alt="">
                 <a href="img/gallery-6.jpg" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
@@ -294,7 +231,7 @@
                 <div class="row">
                     <div class="col-md-6 border-right border-primary">
                         <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
-                            <img class="img-fluid mb-4" src="img/event-1.jpg" alt="" style="height: 400px; width: 600px;object-fit: cover;">
+                            <img loading="lazy" class="img-fluid mb-4" src="img/event-1.jpg" alt="" style="height: 400px; width: 600px;object-fit: cover;">
                             <h4 class="mb-3">22 de marzo de 2025</h4>
                             <p class="mb-2">17:00 hs</p>
                             <p class="mb-0">AGENDAR FECHA</p>
@@ -302,7 +239,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="text-center text-md-left ml-md-3">
-                            <img class="img-fluid mb-4" src="img/event-2.jpg" alt="" style="height: 400px; width: 600px;object-fit: cover;">
+                            <img loading="lazy" class="img-fluid mb-4" src="img/event-2.jpg" alt="" style="height: 400px; width: 600px;object-fit: cover;">
                             <h4 class="mb-3">El Paraíso Eventos</h4>
                             <p class="mb-2">Av. Kennedy (Frente a Coprotab)</p>
                             <p class="mb-0">SALTA</p>
@@ -331,7 +268,7 @@
                     <p class="wedding-date">Elegante</p>
                 </div>
                 <div class="wedding-images">
-                    <img src="img/clothes.png" alt="">
+                    <img loading="lazy" src="img/clothes.png" alt="">
                 </div>
             </div>
             <div class="wedding-info-container">
@@ -347,7 +284,7 @@
 
                 </div>
                 <div class="wedding-images">
-                    <img src="img/elegant-family.png" alt="" style="height: 50px;">
+                    <img loading="lazy" src="img/elegant-family.png" alt="" style="height: 50px;">
                 </div>
             </div>
             <div class="wedding-separate" style="height: 1px; border-top: 1px solid gray;"></div>
@@ -363,7 +300,7 @@
 
                 </div>
                 <div class="wedding-images" >
-                    <img src="img/payment.png" alt="" style="height: 30px !important;">
+                    <img loading="lazy" src="img/payment.png" alt="" style="height: 30px !important;">
                 </div>
             </div>
         </div>
