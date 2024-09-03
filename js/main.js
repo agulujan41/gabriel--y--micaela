@@ -91,11 +91,11 @@
 
     // Gallery carousel
     $(".gallery-carousel").owlCarousel({
-        autoplay: false,
-        smartSpeed: 1500,
+        autoplay: true,
+        smartSpeed: 500,
         dots: false,
         loop: true,
-        nav : true,
+        nav : false,
         navText : [
             '<i class="fa fa-angle-left" aria-hidden="true"></i>',
             '<i class="fa fa-angle-right" aria-hidden="true"></i>'
