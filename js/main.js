@@ -139,19 +139,45 @@ document.getElementById('whatsapp-form').addEventListener('submit', function(e) 
     }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    var audio = document.getElementById('background-music');
-    audio.play().then(function() {
-        console.log('Audio se está reproduciendo con el sonido desactivado');
-    }).catch(function(error) {
-        console.log('Error al intentar reproducir el audio:', error);
+
+timeSong = 0;
+document.addEventListener('DOMContentLoaded', function () {
+    const volumeDownIcon = document.getElementById('volume-down');
+    const volumeUpIcon = document.getElementById('volume-up');
+
+    document.getElementById('volume-control').addEventListener('click', function () {
+        var audio = document.getElementById('background-music');
+        if (volumeDownIcon.classList.contains('hidden')) {
+            volumeDownIcon.classList.remove('hidden');
+            volumeUpIcon.classList.add('hidden');
+            audio.pause();
+            timeSong = audio.currentTime;
+            audio.currentTime = 0
+            audio.pause();
+            audio.volume = 0;
+
+            
+        } else {
+            volumeDownIcon.classList.add('hidden');
+            volumeUpIcon.classList.remove('hidden');
+            audio.play();
+            audio.volume = 1;
+            audio.currentTime = timeSong;
+        }
     });
+});
 
+document.addEventListener('DOMContentLoaded', function () {
+    const ignoreButton = document.getElementById('ignore-button');
+    const upButton = document.getElementById('up-button');
+    const overlay = document.getElementById('overlay');
 
-    document.body.addEventListener('click', function() {
-        audio.muted = false;
-        audio.play().catch(function(error) {
-            console.log('Error al intentar reproducir el audio:', error);
-        });
+    ignoreButton.addEventListener('click', function () {
+        overlay.style.display = 'none';
+    });
+    upButton.addEventListener('click', function () {
+        overlay.style.display = 'none';
+        document.getElementById('volume-control').click()
+
     });
 });

@@ -379,10 +379,14 @@
             </p>
         </div>
     </div>
+    
     <!-- Footer End -->
 
-
     <!-- Scroll to Bottom -->
+    <div class="volume-control" id="volume-control">
+        <span id="volume-up" class="material-icons hidden">volume_up</span>
+        <span id="volume-down" class="material-icons">volume_mute</span>
+    </div>
     <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
 
     <!-- Back to Top -->
@@ -396,6 +400,12 @@
             <div class="circle2"></div>
         </div>
 
+    </div>
+
+    <div id="overlay" class="overlay">
+        <p>Para una mejor experiencia de navegación, active el audio.</p>
+        <button id="up-button" ><span id="volume-down" class="material-icons">volume_up</span>Deseo entrar con audio</button>
+        <button id="ignore-button" ><span id="volume-down" class="material-icons">volume_mute</span>Deseo entrar sin audio  </button>
     </div>
     <audio id="background-music" src="song/cancion.mp3" preload="auto"></audio>
 
