@@ -302,9 +302,24 @@
                     <p class="wedding-date" id="payment-item"><strong>Efectivo</strong></p>
                     <p class="wedding-date" id="payment-item"><strong>Transferencia</strong></p>
                     <p class="wedding-date"><strong>Cuenta a transferir: </strong>Gabriel Cespedes</p>
-                    <div style="width: 100%;display: flex;flex-direction: row;align-items: center;justify-content: center;">
-                        <a href="https://wa.me/543874565402?text=Hola Gabi, ¿como estas?. Me podrias dar los *datos de la cuenta a transferir*. Muchas gracias" id="consultar_datos" class="font-awesome" style="background-color: #0E2521; padding: 0.5em;border-radius: 13px; color: white;align-items: center;vertical-align: center;text-align: center;"><span style="align-items: center;margin-right: 10px;" class="material-icons">phone</span>Consultar datos de la cuenta</a>
-                    </div>
+        
+                    <form id="whatsapp-form-account" style="width: 100%;">
+                        <div class="form-row row justify-content-center">
+                            <div class="form-group col-12" style="width: 100%;">
+                                <input type="text" class="form-control bg-secondary border-0 py-4 px-3"
+                                    placeholder="Nombre y apellido" id="user-name" style="width: 100%;box-sizing: border-box;"/>
+                            </div>
+                        </div>
+                        <div class="form-row row justify-content-center">
+                            <div class="form-group col-12">
+                                <input type="number" class="form-control bg-secondary border-0 py-4 px-3" oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                                    placeholder="DNI o CUIL" id="user-document"/>
+                            </div>
+                        </div>
+                        <div style="width: 100%;display: flex;flex-direction: row;align-items: center;justify-content: center;">
+                            <button type="submit"  id="consultar_datos" class="font-awesome" style="background-color: #0E2521; padding: 0.5em;border-radius: 13px; color: white;align-items: center;vertical-align: center;text-align: center;"><span style="align-items: center;margin-right: 10px;" class="material-icons">phone</span>Consultar datos de la cuenta</button>
+                        </div>
+                    </form>
                     
 
                 </div>
@@ -342,7 +357,7 @@
                                     placeholder="Mensaje a agregar" required="required" id="user-message"></textarea>
                             </div>
                             <div>
-                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Confirmarasistencia</button>
+                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Confirmar asistencia</button>
                             </div>
                         </form>
                     </div>

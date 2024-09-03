@@ -181,3 +181,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 });
+
+
+document.getElementById('whatsapp-form-account').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    var name = encodeURIComponent(document.getElementById('user-name').value.trim());
+    var documento = encodeURIComponent(document.getElementById('user-document').value.trim());
+    
+    if (name && message) {
+        var whatsappMessage = `Hola Gabi, ¿como estas?, soy *${name}* quiero *recibir datos de la cuentas a transferir para* la boda de Gabriel y Micaela. \nMi DNI/CUIL es *${documento}*`;
+        var whatsappURL = `https://api.whatsapp.com/send?phone=543874565402&text=${whatsappMessage}`;
+        
+        window.open(whatsappURL, '_blank');
+    } else {
+        alert('Por favor, completa todos los campos.');
+    }
+});
