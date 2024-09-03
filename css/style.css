@@ -11204,6 +11204,10 @@ a.text-dark:focus {
   text-align: left;
 }
 
+.separate{
+  display: none;
+}
+
 @media screen and (max-width: 1000px) {
   .wedding-card{
     flex-direction: column;
@@ -11233,7 +11237,7 @@ a.text-dark:focus {
     height: 2px;
     bottom: 11px;
     left: calc(50% - 80px);
-    background: lightblue;
+    background: orange;
   }
   
   .separate::after {
@@ -11243,7 +11247,7 @@ a.text-dark:focus {
     height: 2px;
     bottom: 11px;
     right: calc(50% - 80px);
-    background: lightblue;
+    background: orange;
   }
   
   
@@ -11286,8 +11290,3 @@ a.text-dark:focus {
   border-radius: 50%;
   padding: 0.2em;
 }
-
-.separate{
-  display: none;
-}
-
