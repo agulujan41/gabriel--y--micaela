@@ -11332,6 +11332,7 @@ a.text-dark:focus {
   flex-direction: column;
   z-index: 1000;
   gap: 10px;
+  overflow: hidden;
 }
 
 .overlay p {
