@@ -198,3 +198,5 @@ document.getElementById('whatsapp-form-account').addEventListener('submit', func
         alert('Por favor, completa todos los campos.');
     }
 });
+
+
