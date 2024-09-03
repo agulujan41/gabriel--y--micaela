@@ -11222,6 +11222,31 @@ a.text-dark:focus {
   .wedding-images {
       max-width: 50%;
   }
+  
+  .separate{
+    display: flex;
+  }
+  .separate::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    bottom: 11px;
+    left: calc(50% - 80px);
+    background: lightblue;
+  }
+  
+  .separate::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    bottom: 11px;
+    right: calc(50% - 80px);
+    background: lightblue;
+  }
+  
+  
 }
 
 
@@ -11261,3 +11286,8 @@ a.text-dark:focus {
   border-radius: 50%;
   padding: 0.2em;
 }
+
+.separate{
+  display: none;
+}
+
