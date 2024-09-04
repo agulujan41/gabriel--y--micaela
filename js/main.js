@@ -129,7 +129,7 @@ document.getElementById('whatsapp-form').addEventListener('submit', function(e) 
     var name = encodeURIComponent(document.getElementById('user-name-confirm').value.trim());
     var message = encodeURIComponent(document.getElementById('user-message').value.trim());
     
-    if (name && message) {
+    if (name) {
         var whatsappMessage = `Hola Rut, soy ${name} quiero *confirmar mi asistencia* a la boda de Gabriel y Micaela. \n${message}`;
         var whatsappURL = `https://api.whatsapp.com/send?phone=543874400230&text=${whatsappMessage}`;
         
