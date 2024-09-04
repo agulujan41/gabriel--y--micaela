@@ -126,7 +126,7 @@
 document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    var name = encodeURIComponent(document.getElementById('user-name').value.trim());
+    var name = encodeURIComponent(document.getElementById('user-name-confirm').value.trim());
     var message = encodeURIComponent(document.getElementById('user-message').value.trim());
     
     if (name && message) {
